@@ -12,7 +12,32 @@
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding-bottom: 120px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text);
@@ -29,7 +54,29 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.container {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*==============================HEADER==============================*/
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--footer-color-text);
+}
+.header-container {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  margin-right: 76px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -44,7 +91,17 @@ body {
 .footer-logo {
   color: var(--light);
 }
+/*==============================MENU==============================*/
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
 .menu-link {
+  display: block;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -55,10 +112,17 @@ body {
 .menu-link:hover {
   color: var(--hover-color);
 }
+/*==============================CONTACTS==============================*/
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+.contacts-list {
+  display: flex;
 }
 .contact-link {
+  display: block;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -69,8 +133,14 @@ body {
 .contact-link:hover {
   color: var(--hover-color);
 }
-.hero-bg {
+/*==============================MAIN==============================*/
+/*==============================STUDIO==============================*/
+/*==============================HERO==============================*/
+.hero-section {
+  text-align: center;
   background-color: var(--title-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero {
   font-weight: 700;
@@ -79,32 +149,53 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
+
+  margin-bottom: 48px;
 }
 .btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
-  cursor: pointer;
   color: var(--white);
   background-color: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  cursor: pointer;
+  width: 169px;
+  height: 56px;
+  border: none;
 }
 .btn:focus,
 .btn:hover {
-  background-color: var(--hove-color);
+  background-color: var(--hover-color);
   color: var(--white);
 }
+/*==============================STUDIO TEXT==============================*/
+/*==============================characteristic==============================*/
 .min-tittle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+
+  margin-bottom: 8px;
+}
+.characteristic-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.characteristic-list {
+  display: flex;
+}
+.characteristic-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.characteristic-item:not(:last-child) {
+  margin-right: 24px;
 }
 .text-about {
   font-weight: 400;
@@ -112,6 +203,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/*==============================what are we doing==============================*/
 .section-tittle {
   font-weight: 700;
   font-size: 36px;
@@ -120,9 +212,36 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-color);
+  margin-bottom: 72px;
 }
-.light-bg {
-  background-color: var(--light);
+.work-list {
+  display: flex;
+}
+.work-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*==============================TEAM==============================*/
+.team-section {
+  background: var(--light);
+  padding-top: 120px;
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 24px;
+}
+.team-item {
+  background-color: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-container {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .name {
   font-weight: 500;
@@ -131,6 +250,11 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-color);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 8px;
 }
 .work {
   font-weight: 400;
@@ -139,18 +263,44 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text);
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
+/*==============================FOOTER==============================*/
 .footer {
   background-color: var(--title-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-container {
+  max-width: 264px;
 }
 .footer-text {
+  margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-color-text);
 }
+
+/*==============================PORTFOILIO==============================*/
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
 .btn-portfolio {
+  padding: 12px 24px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -165,11 +315,14 @@ body {
 .btn-portfolio:focus,
 .btn-portfolio:hover {
   background-color: var(--hover-color);
+  border-color: var(--hover-color);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .card-tittle {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -182,4 +335,20 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text);
+}
+.portfolio-foto-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-foto-list-item {
+  background: var(--white-color);
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-card-description {
+  padding: 32px 0 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
 }
