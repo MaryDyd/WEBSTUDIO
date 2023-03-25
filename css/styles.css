@@ -133,8 +133,6 @@ body {
 .contact-link:hover {
   color: var(--hover-color);
 }
-/*==============================MAIN==============================*/
-/*==============================STUDIO==============================*/
 /*==============================HERO==============================*/
 .hero-section {
   text-align: center;
@@ -173,7 +171,6 @@ body {
   background-color: var(--hover-color);
   color: var(--white);
 }
-/*==============================STUDIO TEXT==============================*/
 /*==============================characteristic==============================*/
 .min-tittle {
   font-weight: 500;
@@ -220,7 +217,6 @@ body {
 .work-item:not(:last-child) {
   margin-right: 24px;
 }
-
 /*==============================TEAM==============================*/
 .team-section {
   background: var(--light);
@@ -285,7 +281,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--footer-color-text);
 }
-
 /*==============================PORTFOILIO==============================*/
 .portfolio-section {
   padding-top: 96px;
@@ -297,7 +292,6 @@ body {
   gap: 24px;
   margin-bottom: 72px;
 }
-
 .btn-portfolio {
   padding: 12px 24px;
 
@@ -343,7 +337,7 @@ body {
   row-gap: 48px;
 }
 .portfolio-foto-list-item {
-  background: var(--white-color);
+  background: var(--white);
   width: calc((100% - 48px) / 3);
 }
 .portfolio-card-description {
