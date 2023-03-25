@@ -14,7 +14,7 @@
   list-style: none;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--main-text);
 }
 .visually-hidden {
@@ -30,7 +30,7 @@ body {
   margin: -1px;
 }
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -81,7 +81,7 @@ body {
   color: var(--white);
 }
 .btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -151,7 +151,7 @@ body {
   color: var(--footer-color-text);
 }
 .btn-portfolio {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
