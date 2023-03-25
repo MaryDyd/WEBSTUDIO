@@ -1,12 +1,11 @@
 :root {
-  --header-logo: #000000;
-  --white-logo: #ffffff;
-  --title-color: #212121;
-  --hover-color: #2196f3;
-  --hover-btn-color: #188ce8;
-  --desc-color: #757575;
-  --background-color: #2f303a;
-  --light-bg: #f5f4fa;
+  --main-text: #434455;
+  --logo-color: #4d5ae5;
+  --light: #f4f4fd;
+  --title-color: #2e2f42;
+  --hover-color: #404bbf;
+  --white: #ffffff;
+  --footer-color-text: #e7e9fc;
 }
 .link {
   text-decoration: none;
@@ -16,7 +15,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--title-color);
+  color: var(--main-text);
 }
 .visually-hidden {
   position: absolute;
@@ -32,22 +31,23 @@ body {
 }
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--hover-color);
+  text-transform: uppercase;
+  color: var(--logo-color);
 }
 .header-logo {
-  color: var(--header-logo);
+  color: var(--title-color);
 }
 .footer-logo {
-  color: var(--white-logo);
+  color: var(--light);
 }
 .menu-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
@@ -55,150 +55,131 @@ body {
 .menu-link:hover {
   color: var(--hover-color);
 }
+.contacts {
+  font-style: normal;
+}
 .contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--desc-color);
+  color: var(--main-text);
 }
 .contact-link:focus,
 .contact-link:hover {
   color: var(--hover-color);
 }
 .hero-bg {
-  background-color: var(--background-color);
+  background-color: var(--title-color);
 }
 .hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-logo);
+  letter-spacing: 0.02em;
+  color: var(--white);
 }
 .btn {
-  font-family: inherit;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.5;
   display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  color: var(--white-logo);
-  background-color: var(--hover-color);
+  color: var(--white);
+  background-color: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .btn:focus,
 .btn:hover {
-  background-color: var(--hover-btn-color);
-  color: var(--white-logo);
+  background-color: var(--hove-color);
+  color: var(--white);
 }
 .min-tittle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--title-color);
 }
 .text-about {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--desc-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .section-tittle {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--title-color);
 }
 .light-bg {
-  background-color: var(--light-bg);
-}
-.team-item {
-  background-color: var(--white-logo);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  background-color: var(--light);
 }
 .name {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--title-color);
 }
 .work {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--desc-color);
+  letter-spacing: 0.02em;
+  color: var(--main-text);
 }
 .footer {
-  background-color: var(--background-color);
+  background-color: var(--title-color);
 }
-.footer-nav-address {
-  font-style: normal;
+.footer-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--white-logo);
-}
-.footer-nav {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-color-text);
 }
 .btn-portfolio {
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  color: var(--title-color);
-  background-color: var(--light-bg);
+  color: var(--logo-color);
+  background-color: var(--light);
   border-radius: 4px;
+  border: 1px solid var(--footer-color-text);
 }
 .btn-portfolio:focus,
 .btn-portfolio:hover {
   background-color: var(--hover-color);
-  color: var(--white-logo);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .card-tittle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--title-color);
 }
 .portfolio-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--desc-color);
-}
-.list-item {
-  background-color: var(--white-logo);
-  border: 1px solid #eeeeee;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text);
 }
