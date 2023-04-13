@@ -77,10 +77,11 @@ body {
 .header-container {
   display: flex;
   background-color: var(--white-color);
+  align-items: center;
 }
 .header-nav {
   display: flex;
-  /*align-items: center; */
+  align-items: center;
 }
 .logo {
   margin-right: 76px;
@@ -99,9 +100,11 @@ body {
 .footer-logo {
   color: var(--light);
 }
+
 /*==============================MENU==============================*/
 .menu {
   display: flex;
+  align-items: center;
 }
 .menu-item:not(:last-child) {
   margin-right: 40px;
@@ -120,6 +123,7 @@ body {
 .menu-link:hover {
   color: var(--hover-color);
 }
+
 .current::after {
   content: "";
   width: 100%;
@@ -135,11 +139,9 @@ body {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 0ms;
 }
-
 .current {
   color: var(--hover-color);
 }
-
 @keyframes current{
   0% {
     transform: scaleX(0);
@@ -149,11 +151,11 @@ body {
     transform: scaleX(1);
   }
 }
-
 .portfolio,
 .studio {
   color: var(--hover-color);
 }
+
 /*==============================CONTACTS==============================*/
 .contacts {
   font-style: normal;
@@ -176,6 +178,7 @@ body {
 .contact-link:hover {
   color: var(--hover-color);
 }
+
 /*==============================HERO==============================*/
 .hero-section {
   text-align: center;
