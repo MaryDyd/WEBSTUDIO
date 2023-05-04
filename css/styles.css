@@ -1128,7 +1128,7 @@ body {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--white);
+    color: var(--customers-color);
   }
   .footer-form-submit {
     margin: 0 auto;
