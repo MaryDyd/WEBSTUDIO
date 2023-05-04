@@ -19,9 +19,10 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container header-container">
+      <div class="container header-container mob-header">
         <nav class="header-nav">
           <a href="./index.html" class="link logo">Web<span class="header-logo">Studio</span></a>
+          
           <ul class="menu list">
             <li class="menu-item">
               <a href="./index.html" class="link menu-link current studio">Studio</a>
@@ -34,16 +35,119 @@
             </li>
           </ul>
         </nav>
+
+        <div class="mobile-menu-cont">
+          <div class="mobile-menu-container" data-menu-open>
+            <button type="button" class="mobile-menu-open">
+              <svg class="mobile-menu-open__icon icon" width="30" height="19">
+                <use
+                  href="./images/icons/burger-icon1.svg#icon-burger-icon"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
         <address class="contacts">
           <ul class="contacts-list list">
-            <li class="menu-item">
-              <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="menu-items">
+              <a class="contacts-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="menu-item">
-              <a class="contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li class="menu-items">
+              <a class="contacts-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
+      </div>
+
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mob-container color-bg">
+          <button class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons/symbol-defs-close.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a
+                class="mobile-menu-link mobile-active-link link currentanimation studio"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link mobile-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link mobile-link link" href="#">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list list">
+              <li class="mobile-menu-item">
+                <a class="mobile-contacts-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-contacts-email mobile-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-social-icons-list list">
+              <li class="mobile-social-icons-item">
+                <a class="mobile-social-link" href="">
+                  <svg width="24" height="24" class="mobile-social-icons">
+                    <use
+                      href="./images/icons/symbol-team.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-icons-item">
+                <a class="mobile-social-link" href="">
+                  <svg width="24" height="24" class="mobile-social-icons">
+                    <use
+                      href="./images/icons/symbol-team.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-icons-item">
+                <a class="mobile-social-link" href="">
+                  <svg width="24" height="24" class="mobile-social-icons">
+                    <use
+                      href="./images/icons/symbol-team.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-icons-item">
+                <a class="mobile-social-link" href="">
+                  <svg width="24" height="24" class="mobile-social-icons">
+                    <use
+                      href="./images/icons/symbol-team.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -110,7 +214,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section-one section">
         <div class="container">
           <h2 class="section-tittle">What are we doing</h2>
           <ul class="work-list list">
@@ -130,7 +234,7 @@
         <div class="container">
           <h2 class="section-tittle">Our Team</h2>
           <ul class="team-list list">
-            <li class="team-item">
+            <li class="team-item team">
               <img src="./images/team/mark-guerrero.jpg" alt="Mark Guerrero" width="264"/>
               <div class="team-list-container">
                 <h3 class="name">Mark Guerrero</h3>
@@ -167,7 +271,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item team">
               <img src="./images/team/tom-ford.jpg" alt="Tom Ford" width="264"/>
               <div class="team-list-container">
                 <h3 class="name">Tom Ford</h3>
@@ -204,7 +308,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item team">
               <img src="./images/team/camila-garcia.jpg" alt="Camila Garcia" width="264"/>
               <div class="team-list-container">
                 <h3 class="name">Camila Garcia</h3>
@@ -332,58 +436,60 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-main">
-          <a href="./index.html" class="link logo">Web<span class="footer-logo">Studio</span></a>
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-main">
+            <a href="./index.html" class="link logo">Web<span class="footer-logo">Studio</span></a>
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social">
+            <p class="footer-tittle">Social media</p>
+            <ul class="footer-icons-list list">
+              <li>
+                <a class="footer-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons/symbol-defs-footer.svg#icon-f-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="">
+                  <svg width="24" height="24" >
+                    <use href="./images/icons/symbol-defs-footer.svg#icon-f-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons/symbol-defs-footer.svg#icon-f-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/icons/symbol-defs-footer.svg#icon-f-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
         </div>
-        <div class="footer-social">
-          <p class="footer-tittle">Social media</p>
-          <ul class="footer-icons-list list">
-            <li>
-              <a class="footer-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/icons/symbol-defs-footer.svg#icon-f-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="">
-                <svg width="24" height="24" >
-                  <use href="./images/icons/symbol-defs-footer.svg#icon-f-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/icons/symbol-defs-footer.svg#icon-f-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/icons/symbol-defs-footer.svg#icon-f-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-      </div>
-      <div class="footer-subscribe">
-        <p class="footer-tittle">Subscribe</p>
-        <form class="footer-subscribe-form">
-          <label class="footer-subscribe-label">
-              <input type="email" name="subscribe" class="footer-subscribe-input" placeholder="E-mail"/>
-          </label>
-          <button type="submit" class="footer-form-submit">Subscribe<svg class="footer-subsribe-icon" width="24" height="20">
-            <use href="./images/icons/symbol-defs-send.svg#icon-send"></use></svg>
-          </button>     
-        </form>
-      </div>
+        <div class="footer-subscribe">
+          <p class="footer-tittle">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+                <input type="email" name="subscribe" class="footer-subscribe-input" placeholder="E-mail"/>
+            </label>
+            <button type="submit" class="footer-form-submit">Subscribe<svg class="footer-subsribe-icon" width="24" height="20">
+              <use href="./images/icons/symbol-defs-send.svg#icon-send"></use></svg>
+            </button>     
+          </form>
+        </div>
+        </div>
       </div>
     </footer>
 
@@ -441,5 +547,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
