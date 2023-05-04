@@ -104,6 +104,9 @@ body {
   .menu {
     display: none;
   }
+  .no-scroll {
+    overflow: hidden;
+  }
   .contacts {
     display: none;
   }
