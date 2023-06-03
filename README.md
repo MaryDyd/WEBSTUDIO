@@ -1,6 +1,6 @@
-## :pushpin: Eco protection
+## :pushpin: WEBSTUDIO
 #### :memo: Description: 
-Homepage of the Tourist Agency.
+Homepage of the WEBSTUDIO.
 ___
 
 #### :link: Live Demo: 
