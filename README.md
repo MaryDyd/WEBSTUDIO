@@ -6,7 +6,7 @@ ___
 #### :link: Live Demo: 
 [Website](https://reyz1337.github.io/Travel_with_us/)
 
-[Design](https://www.figma.com/file/U3LB45bgtgmp9HI54EnvTR/Exam-%231---Travel-With-Us?node-id=0%3A1)
+[Design](https://www.figma.com/file/T1urcfhS0MYpCwBc1sprzW/Web-Studio?type=design&node-id=297046%3A1554&t=FkSswmxfqL3pBDvi-1)
 ___
 
 #### :rocket: Technologies Used
